@@ -15,19 +15,30 @@ namespace ConsoleApp
 
 
 
-            string input = Console.ReadLine();
+            //string input = Console.ReadLine();
 
-            if (input.Equals("Hello", StringComparison.OrdinalIgnoreCase))
+            //if (input.Equals("Hello", StringComparison.OrdinalIgnoreCase))
+            //{
+            //    Console.WriteLine("You said Hello");
+            //}
+            //else if (input.Equals("Goodbye", StringComparison.OrdinalIgnoreCase))
+            //{
+            //    Console.WriteLine("You said Goodbye");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You said something else.");
+            //}
+
+
+
+            Console.Write("Enter an operation: + - * / ");
+            string operation = Console.ReadLine();
+
+            switch (operation)
             {
-                Console.WriteLine("You said Hello");
-            }
-            else if (input.Equals("Goodbye", StringComparison.OrdinalIgnoreCase))
-            {
-                Console.WriteLine("You said Goodbye");
-            }
-            else
-            {
-                Console.WriteLine("You said something else.");
+                default:
+                    break;
             }
 
             Console.ReadLine();
