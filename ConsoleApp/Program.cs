@@ -73,30 +73,34 @@ namespace ConsoleApp
 
 
 
-            int counter = 1;
-            int maximum = 10;
+            //int counter = 1;
+            //int maximum = 10;
 
-            while (counter <= maximum)
-            {
-                Console.WriteLine("Loop number: " + counter);
-                counter++;
-            }
+            //while (counter <= maximum)
+            //{
+            //    Console.WriteLine("Loop number: " + counter);
+            //    counter++;
+            //}
 
-            string welcome = "Hello world";
+            //string welcome = "Hello world";
 
-            counter = 0;
-            while (counter < welcome.Length)
-            {
-                Console.WriteLine(welcome[counter]);
-                counter++;
-            }
+            //counter = 0;
+            //while (counter < welcome.Length)
+            //{
+            //    Console.WriteLine(welcome[counter]);
+            //    counter++;
+            //}
 
-            counter = 0;
-            do
-            {
-                Console.WriteLine(welcome[counter]);
-                counter++;
-            } while (counter < welcome.Length);
+            //counter = 0;
+            //do
+            //{
+            //    Console.WriteLine(welcome[counter]);
+            //    counter++;
+            //} while (counter < welcome.Length);
+
+
+
+            string[] fruit = { "Apples", "Oranges", "Grapes" };
 
             Console.ReadLine();
         }
