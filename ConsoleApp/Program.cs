@@ -115,12 +115,21 @@ namespace ConsoleApp
             int total = Add(Value1, Value2);
             Console.WriteLine("Total: " + total);
 
+            int result;
+            AddToOutParam(Value1, Value2, out result);
+            Console.WriteLine("The answer is: " + result);
+
             Console.ReadLine();
         }
 
         static int Add(int value1, int value2)
         {
             return value1 + value2;
+        }
+
+        static void AddToOutParam(int value1, int value2, out int result)
+        {
+            result = value1 + value2;
         }
     }
 }
