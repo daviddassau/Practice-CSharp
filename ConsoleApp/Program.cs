@@ -31,10 +31,24 @@ namespace ConsoleApp
 
             Fruit[] groceries = { Fruit.Apple, Fruit.Apple, Fruit.Orange };
 
+            int apples = 0;
             foreach (var item in groceries)
             {
+                if (item == Fruit.Orange)
+                {
+                    break;
+                }
+                if (item == Fruit.Apple)
+                {
+                    apples++;
+                    if (apples > 1)
+                    {
+                        continue;
+                    }
+                }
                 Console.WriteLine(item);
             }
+            Console.WriteLine("End of grocery list");
 
 
 
