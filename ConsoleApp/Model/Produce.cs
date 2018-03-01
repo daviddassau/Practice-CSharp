@@ -56,6 +56,11 @@ namespace ConsoleApp.Model
         {
 
         }
+
+        public override string ToString()
+        {
+            return "Fruit: " + base.ToString();
+        }
     }
 
     class Vegetable : Produce
@@ -68,6 +73,11 @@ namespace ConsoleApp.Model
             base(name, weight, quantity)
         {
 
+        }
+
+        public override string ToString()
+        {
+            return "Vegetable: " + base.ToString();
         }
     }
 }

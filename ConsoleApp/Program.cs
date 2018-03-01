@@ -21,9 +21,6 @@ namespace ConsoleApp
             produce.Add(f2);
 
             produce.Add(new Vegetable("Carrot", 4.1, 16));
-            //((Vegetable)produce[2]).Name = "Carrot";
-            //((Vegetable)produce[2]).Weight = 4.1;
-            //((Vegetable)produce[2]).Quantity = 16;
 
             Console.WriteLine($"There are {produce.Count} items");
 
