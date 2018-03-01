@@ -29,6 +29,13 @@ namespace ConsoleApp
                     break;
             }
 
+            Fruit[] groceries = { Fruit.Apple, Fruit.Apple, Fruit.Orange };
+
+            foreach (var item in groceries)
+            {
+                Console.WriteLine(item);
+            }
+
 
 
             //string input = Console.ReadLine();
