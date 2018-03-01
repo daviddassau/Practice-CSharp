@@ -8,8 +8,29 @@ namespace ConsoleApp
 {
     class Program
     {
+        enum Fruit { Apple, Orange, Fig };
+
         static void Main(string[] args)
         {
+            var thisFruit = Fruit.Apple;
+            switch (thisFruit)
+            {
+                case Fruit.Apple:
+                    Console.WriteLine("You chose Apple");
+                    break;
+                case Fruit.Orange:
+                    Console.WriteLine("You chose Orange");
+                    break;
+                case Fruit.Fig:
+                    Console.WriteLine("You chose Fig");
+                    break;
+                default:
+                    Console.WriteLine("You chose something else");
+                    break;
+            }
+
+
+
             //string input = Console.ReadLine();
             //Console.WriteLine("You entered: " + input);
 
@@ -107,13 +128,19 @@ namespace ConsoleApp
             //    Console.WriteLine(item);
             //}
 
-            int localVar = 1;
 
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("Value of localVar: " + localVar);
-                localVar++;
-            }
+
+            //int localVar = 1;
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("Value of localVar: " + localVar);
+            //    localVar++;
+            //}
+
+
+
+
 
             Console.ReadLine();
         }
