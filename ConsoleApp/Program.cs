@@ -110,16 +110,17 @@ namespace ConsoleApp
             //    Console.WriteLine(item);
             //}
 
-            
 
-            
+
+            int total = Add(Value1, Value2);
+            Console.WriteLine("Total: " + total);
 
             Console.ReadLine();
         }
 
         static int Add(int value1, int value2)
         {
-
+            return value1 + value2;
         }
     }
 }
