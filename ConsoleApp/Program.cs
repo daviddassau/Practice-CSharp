@@ -60,6 +60,11 @@ namespace ConsoleApp
 
 
 
+            for (int i = 0; i < 11; i++)
+            {
+                Console.WriteLine("Number: " + i);
+            }
+
             string[] fruit = { "Apples", "Oranges", "Grapes" };
 
             Console.ReadLine();
