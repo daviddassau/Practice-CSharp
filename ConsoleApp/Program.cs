@@ -16,17 +16,20 @@ namespace ConsoleApp
             var f1 = new Fruit();
             f1.Name = "Apple";
             f1.Weight = 8.5;
+            f1.Quantity = 3;
             produce.Add(f1);
 
             var f2 = new Fruit();
-            f1.Name = "Bananas";
-            f1.Weight = 4.5;
+            f2.Name = "Bananas";
+            f2.Weight = 4.5;
+            f2.Quantity = 7;
             produce.Add(f2);
 
 
             produce.Add(new Vegetable());
             ((Vegetable)produce[2]).Name = "Carrot";
             ((Vegetable)produce[2]).Weight = 4.1;
+            ((Vegetable)produce[2]).Quantity = 16;
 
             Console.WriteLine($"There are {produce.Count} items");
 
@@ -47,7 +50,7 @@ namespace ConsoleApp
 
         public string Name
         {
-            get { return name; }
+            get { return name.ToUpper(); }
             set { name = value; }
         }
 
@@ -60,6 +63,9 @@ namespace ConsoleApp
             get { return weight; }
             set { weight = value; }
         }
+
+        public int Quantity { get; set; }
+
     }
 
     class Vegetable
@@ -81,5 +87,8 @@ namespace ConsoleApp
             get { return weight; }
             set { weight = value; }
         }
+
+        public int Quantity { get; set; }
+
     }
 }
