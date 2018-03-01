@@ -14,13 +14,19 @@ namespace ConsoleApp
 
 
             var f1 = new Fruit();
+            f1.Name = "Apple";
+            f1.Weight = 8.5;
             produce.Add(f1);
 
             var f2 = new Fruit();
+            f1.Name = "Bananas";
+            f1.Weight = 4.5;
             produce.Add(f2);
 
-            
+
             produce.Add(new Vegetable());
+            ((Vegetable)produce[2]).Name = "Carrot";
+            ((Vegetable)produce[2]).Weight = 4.1;
 
             Console.WriteLine($"There are {produce.Count} items");
 
@@ -37,17 +43,43 @@ namespace ConsoleApp
 
     class Fruit
     {
-        public string name;
+        private string name;
 
         public string Name
         {
             get { return name; }
             set { name = value; }
         }
+
+
+
+        public double weight;
+
+        public double Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
     }
 
     class Vegetable
     {
+        private string name;
 
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+
+
+        public double weight;
+
+        public double Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
     }
 }
