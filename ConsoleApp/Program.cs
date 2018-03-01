@@ -16,6 +16,10 @@ namespace ConsoleApp
             inventory.Add("Apples", 23);
             inventory.Add("Oranges", 12);
 
+            var keys = inventory.Keys;
+
+            Console.WriteLine($"Number of items: {keys.Count}");
+
             Console.ReadLine();
         }
     }
