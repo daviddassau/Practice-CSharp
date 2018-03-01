@@ -14,10 +14,10 @@ namespace ConsoleApp
             var produce = new List<object>();
 
 
-            var f1 = new Fruit("Apple", 8.5, 3);
+            var f1 = new Produce("Apple", 8.5, 3);
             produce.Add(f1);
 
-            var f2 = new Fruit("Banana", 4.5, 7);
+            var f2 = new Produce("Banana", 4.5, 7);
             produce.Add(f2);
 
             produce.Add(new Vegetable("Carrot", 4.1, 16));
