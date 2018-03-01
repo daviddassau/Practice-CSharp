@@ -45,6 +45,19 @@ namespace ConsoleApp.Model
         }
     }
 
+    class Fruit : Produce
+    {
+        public Fruit()
+        {
+
+        }
+        public Fruit(string name, double weight, int quantity) :
+            base(name, weight, quantity)
+        {
+
+        }
+    }
+
     class Vegetable
     {
         public Vegetable()

@@ -45,10 +45,9 @@
     <Compile Include="CalcUtilities.cs" />
     <Compile Include="Chapter 5 Code\ChapterFiveCode.cs" />
     <Compile Include="Chapter 6 Code\ChapterSixCode.cs" />
-    <Compile Include="Fruit.cs" />
+    <Compile Include="Model\Produce.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vegetable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
