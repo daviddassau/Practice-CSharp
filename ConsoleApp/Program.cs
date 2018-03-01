@@ -107,11 +107,12 @@ namespace ConsoleApp
             //    Console.WriteLine(item);
             //}
 
-
+            int localVar = 1;
 
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("Value of i: " + i);
+                Console.WriteLine("Value of localVar: " + localVar);
+                localVar++;
             }
 
             Console.ReadLine();
