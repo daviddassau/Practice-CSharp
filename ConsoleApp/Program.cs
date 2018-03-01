@@ -102,6 +102,11 @@ namespace ConsoleApp
 
             string[] fruit = { "Apples", "Oranges", "Grapes" };
 
+            foreach (var item in fruit)
+            {
+                Console.WriteLine(item);
+            }
+
             Console.ReadLine();
         }
     }
