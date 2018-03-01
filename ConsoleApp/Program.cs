@@ -91,6 +91,13 @@ namespace ConsoleApp
                 counter++;
             }
 
+            counter = 0;
+            do
+            {
+                Console.WriteLine(welcome[counter]);
+                counter++;
+            } while (counter < welcome.Length);
+
             Console.ReadLine();
         }
     }
