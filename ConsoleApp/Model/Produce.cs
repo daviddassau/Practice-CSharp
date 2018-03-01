@@ -58,42 +58,16 @@ namespace ConsoleApp.Model
         }
     }
 
-    class Vegetable
+    class Vegetable : Produce
     {
         public Vegetable()
         {
+
         }
-
-        public Vegetable(string name, double weight, int quantity)
+        public Vegetable(string name, double weight, int quantity) :
+            base(name, weight, quantity)
         {
-            Name = name;
-            Weight = weight;
-            Quantity = quantity;
-        }
 
-        private string name;
-
-        public string Name
-        {
-            get { return name.ToUpper(); }
-            set { name = value; }
-        }
-
-
-
-        public double weight;
-
-        public double Weight
-        {
-            get { return weight; }
-            set { weight = value; }
-        }
-
-        public int Quantity { get; set; }
-
-        public override string ToString()
-        {
-            return Name + " (" + Weight + "oz) :" + Quantity;
         }
     }
 }
