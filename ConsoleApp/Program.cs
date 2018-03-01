@@ -13,23 +13,16 @@ namespace ConsoleApp
             var produce = new List<object>();
 
 
-            var f1 = new Fruit();
-            f1.Name = "Apple";
-            f1.Weight = 8.5;
-            f1.Quantity = 3;
+            var f1 = new Fruit("Apple", 8.5, 3);
             produce.Add(f1);
 
-            var f2 = new Fruit();
-            f2.Name = "Bananas";
-            f2.Weight = 4.5;
-            f2.Quantity = 7;
+            var f2 = new Fruit("Banana", 4.5, 7);
             produce.Add(f2);
 
-
-            produce.Add(new Vegetable());
-            ((Vegetable)produce[2]).Name = "Carrot";
-            ((Vegetable)produce[2]).Weight = 4.1;
-            ((Vegetable)produce[2]).Quantity = 16;
+            produce.Add(new Vegetable("Carrot", 4.1, 16));
+            //((Vegetable)produce[2]).Name = "Carrot";
+            //((Vegetable)produce[2]).Weight = 4.1;
+            //((Vegetable)produce[2]).Quantity = 16;
 
             Console.WriteLine($"There are {produce.Count} items");
 
@@ -85,6 +78,17 @@ namespace ConsoleApp
 
     class Vegetable
     {
+        public Vegetable()
+        {
+        }
+
+        public Vegetable(string name, double weight, int quantity)
+        {
+            Name = name;
+            Weight = weight;
+            Quantity = quantity;
+        }
+
         private string name;
 
         public string Name
