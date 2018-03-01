@@ -82,6 +82,15 @@ namespace ConsoleApp
                 counter++;
             }
 
+            string welcome = "Hello world";
+
+            counter = 0;
+            while (counter < welcome.Length)
+            {
+                Console.WriteLine(welcome[counter]);
+                counter++;
+            }
+
             Console.ReadLine();
         }
     }
