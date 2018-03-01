@@ -46,6 +46,17 @@ namespace ConsoleApp
 
     class Fruit
     {
+        public Fruit()
+        {
+        }
+
+        public Fruit(string name, double weight, int quantity)
+        {
+            Name = name;
+            Weight = weight;
+            Quantity = quantity;
+        }
+
         private string name;
 
         public string Name
