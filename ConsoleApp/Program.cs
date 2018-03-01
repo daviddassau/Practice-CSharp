@@ -8,6 +8,9 @@ namespace ConsoleApp
 {
     class Program
     {
+        const int Value1 = 12;
+        const int Value2 = 24;
+
         static void Main(string[] args)
         {
             //string input = Console.ReadLine();
@@ -100,14 +103,23 @@ namespace ConsoleApp
 
 
 
-            string[] fruit = { "Apples", "Oranges", "Grapes" };
+            //string[] fruit = { "Apples", "Oranges", "Grapes" };
 
-            foreach (var item in fruit)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in fruit)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            
+
+            
 
             Console.ReadLine();
+        }
+
+        static int Add(int value1, int value2)
+        {
+
         }
     }
 }
