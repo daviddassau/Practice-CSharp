@@ -20,6 +20,11 @@ namespace ConsoleApp
 
             Console.WriteLine($"Number of items: {keys.Count}");
 
+            foreach (var key in keys)
+            {
+                Console.WriteLine($"{key}: {inventory[key]}");
+            }
+
             Console.ReadLine();
         }
     }
