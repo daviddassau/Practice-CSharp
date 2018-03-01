@@ -76,7 +76,11 @@ namespace ConsoleApp
             int counter = 1;
             int maximum = 10;
 
-
+            while (counter <= maximum)
+            {
+                Console.WriteLine("Loop number: " + counter);
+                counter++;
+            }
 
             Console.ReadLine();
         }
