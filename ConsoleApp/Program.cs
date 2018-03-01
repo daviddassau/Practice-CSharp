@@ -12,6 +12,9 @@ namespace ConsoleApp
         {
             var inventory = new Dictionary<string, double>();
 
+            inventory.Add("Figs", 56);
+            inventory.Add("Apples", 23);
+            inventory.Add("Oranges", 12);
 
             Console.ReadLine();
         }
