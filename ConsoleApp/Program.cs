@@ -28,8 +28,19 @@ namespace ConsoleApp
             double average = weights.Average();
             Console.WriteLine($"The average is {average}");
 
+            UseArray(names);
+
 
             Console.ReadLine();
+        }
+
+        static void UseArray(string[] values)
+        {
+            Console.WriteLine("Values in method: ");
+            foreach (var item in values)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
