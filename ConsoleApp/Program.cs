@@ -24,6 +24,11 @@ namespace ConsoleApp
 
             Console.WriteLine($"There are {produce.Count} items");
 
+            foreach (var item in produce)
+            {
+                Console.WriteLine(item);
+            }
+
 
 
             Console.ReadLine();
