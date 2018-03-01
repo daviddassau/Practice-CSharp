@@ -25,6 +25,9 @@ namespace ConsoleApp
             int sum = weights.Sum();
             Console.WriteLine($"The sum is {sum}");
 
+            double average = weights.Average();
+            Console.WriteLine($"The average is {average}");
+
 
             Console.ReadLine();
         }
