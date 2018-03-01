@@ -66,6 +66,10 @@ namespace ConsoleApp
 
         public int Quantity { get; set; }
 
+        public override string ToString()
+        {
+            return Name + " (" + Weight + "oz) :" + Quantity;
+        }
     }
 
     class Vegetable
