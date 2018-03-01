@@ -10,8 +10,27 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
+            //string input = Console.ReadLine();
+            //Console.WriteLine("You entered: " + input);
+
+
+
             string input = Console.ReadLine();
-            Console.WriteLine("You entered: " + input);
+
+            if (input.Equals("Hello", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine("You said Hello");
+            }
+            else if (input.Equals("Goodbye", StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine("You said Goodbye");
+            }
+            else
+            {
+                Console.WriteLine("You said something else.");
+            }
+
+            Console.ReadLine();
         }
     }
 }
