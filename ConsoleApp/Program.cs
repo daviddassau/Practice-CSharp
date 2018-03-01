@@ -37,6 +37,22 @@ namespace ConsoleApp
 
             switch (operation)
             {
+                case "+":
+                    Console.WriteLine("You chose to add");
+                    break;
+
+                case "-":
+                    Console.WriteLine("You chose to subtract");
+                    break;
+
+                case "*":
+                    Console.WriteLine("You chose to multiply");
+                    break;
+
+                case "/":
+                    Console.WriteLine("You chose to divide");
+                    break;
+
                 default:
                     break;
             }
