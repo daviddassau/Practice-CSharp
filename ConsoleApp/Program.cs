@@ -54,6 +54,7 @@ namespace ConsoleApp
                     break;
 
                 default:
+                    Console.WriteLine("No such operation");
                     break;
             }
 
