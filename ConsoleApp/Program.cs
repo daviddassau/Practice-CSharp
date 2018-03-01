@@ -20,7 +20,10 @@ namespace ConsoleApp
             names[0] = "Joe";
             names[1] = "Mary";
             names[2] = "Martha";
-            
+
+            int[] weights = {12, 34, 56, 12, 23};
+            int sum = weights.Sum();
+            Console.WriteLine($"The sum is {sum}");
 
 
             Console.ReadLine();
