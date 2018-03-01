@@ -60,16 +60,23 @@ namespace ConsoleApp
 
 
 
-            for (int i = 0; i < 11; i++)
-            {
-                Console.WriteLine("Number: " + i);
-            }
+            //for (int i = 0; i < 11; i++)
+            //{
+            //    Console.WriteLine("Number: " + i);
+            //}
 
-            string[] fruit = { "Apples", "Oranges", "Grapes" };
-            for (int i = 0; i < fruit.Length; i++)
-            {
-                Console.WriteLine(fruit[i]);
-            }
+            //string[] fruit = { "Apples", "Oranges", "Grapes" };
+            //for (int i = 0; i < fruit.Length; i++)
+            //{
+            //    Console.WriteLine(fruit[i]);
+            //}
+
+
+
+            int counter = 1;
+            int maximum = 10;
+
+
 
             Console.ReadLine();
         }
