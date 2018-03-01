@@ -33,6 +33,17 @@ namespace ConsoleApp
                 Console.WriteLine($"{key}: {inventory[key]}"); // this will display the items in the dictionary in alphabetical order
             }
 
+            // this will test what's passed in ("Figs") and see if it's true or false
+            double value;
+            if (inventory.TryGetValue("Figs", out value))
+            {
+                Console.WriteLine($"Figs inventory: {value}");
+            }
+            else
+            {
+                Console.WriteLine("Figs inventory not available");
+            }
+
             Console.ReadLine();
         }
     }
