@@ -78,7 +78,7 @@ namespace ConsoleApp
 
         public string Name
         {
-            get { return name; }
+            get { return name.ToUpper(); }
             set { name = value; }
         }
 
@@ -94,5 +94,9 @@ namespace ConsoleApp
 
         public int Quantity { get; set; }
 
+        public override string ToString()
+        {
+            return Name + " (" + Weight + "oz) :" + Quantity;
+        }
     }
 }
