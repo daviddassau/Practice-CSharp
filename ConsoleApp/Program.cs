@@ -66,6 +66,10 @@ namespace ConsoleApp
             }
 
             string[] fruit = { "Apples", "Oranges", "Grapes" };
+            for (int i = 0; i < fruit.Length; i++)
+            {
+                Console.WriteLine(fruit[i]);
+            }
 
             Console.ReadLine();
         }
