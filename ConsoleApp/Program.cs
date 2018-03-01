@@ -1,5 +1,4 @@
-﻿using ConsoleApp.Chapter_6_Code;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +15,12 @@ namespace ConsoleApp
             {
                 Console.WriteLine(item);
             }
+
+            string[] names = new string[3];
+            names[0] = "Joe";
+            names[1] = "Mary";
+            names[2] = "Martha";
+            
 
 
             Console.ReadLine();
