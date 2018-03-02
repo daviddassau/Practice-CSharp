@@ -23,7 +23,7 @@ namespace ConsoleApp.Model
 
         public string Name
         {
-            get { return name.ToUpper(); }
+            get { return name; }
             set { name = value; }
         }
 
