@@ -11,7 +11,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            var produce = new List<object>();
+            var produce = new List<Produce>();
 
 
             var f1 = new Fruit("Apple", 8.5, 3);
@@ -26,7 +26,7 @@ namespace ConsoleApp
 
             foreach (var item in produce)
             {
-                Console.WriteLine(item);
+                Console.WriteLine($"{item}, {ProduceUtility.GetItemWeight(item)} oz");
             }
 
 

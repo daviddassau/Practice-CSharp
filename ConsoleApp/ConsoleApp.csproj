@@ -46,6 +46,7 @@
     <Compile Include="Chapter 5 Code\ChapterFiveCode.cs" />
     <Compile Include="Chapter 6 Code\ChapterSixCode.cs" />
     <Compile Include="Model\Produce.cs" />
+    <Compile Include="Model\ProduceUtility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
