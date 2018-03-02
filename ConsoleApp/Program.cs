@@ -26,8 +26,10 @@ namespace ConsoleApp
 
             foreach (var item in produce)
             {
-                Console.WriteLine($"{item}, {ProduceUtility.GetItemWeight(item)} oz");
+                Console.WriteLine($"{item}, total weight: {ProduceUtility.GetItemWeight(item)} oz");
             }
+
+            Console.WriteLine($"Total weight: {ProduceUtility.GetTotalWeight(produce)} oz");
 
 
 

@@ -12,5 +12,15 @@ namespace ConsoleApp.Model
         {
             return item.Weight + item.Quantity;
         }
+
+        public static double GetTotalWeight(List<Produce> produce)
+        {
+            double result = 0;
+            foreach (var item in produce)
+            {
+                result += item.Weight * item.Quantity;
+            }
+            return result;
+        }
     }
 }
